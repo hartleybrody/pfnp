@@ -65,3 +65,13 @@ If we have time, we'll look at adding some Javascript to our sites.
 
 
 ## Day 2
+
+### The "Back" End
+Today, we're going to look at the backend, or code that runs on a web server, as opposed to on a visitor's computer.
+
+No matter what language you use on the backend, the goal is always to return HTML, CSS and JS to be run on the visitor's computer.
+
+### Intro to Ruby
+Ruby is one of many languages that can be run on a web server to produce HTML, CSS and JS. It tends to be very popular and trendy, especially among startups. It also has a lot of good tools and frameworks that make the web developer's life a lot easier.
+
+### Libraries and Frameworks
