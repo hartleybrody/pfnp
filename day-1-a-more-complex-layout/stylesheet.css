@@ -1,0 +1,9 @@
+body {
+    background-color: #ccc;
+    font-family: 'Helvetica', sans-serif
+}
+
+.container {
+    margin: 20px auto;
+    background-color: #fff;
+}

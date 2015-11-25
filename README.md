@@ -16,7 +16,7 @@ The class is organzied by General Assembly. More information [here](https://gene
 
  * **The "Front" End (1hr)** The frontend of any web application or web site is the code that runs in the visitor's browser, as opposed to code that runs on the site's own web server. Let's take a look at the frontends of a few simple sites, using tools that our browser provides. Explore and try editing them on the fly.
 
- * **Building our own static websites! (2hrs)** Now for the fun part. Using sublime text, we'll create an HTML file as well as some CSS to build our own web pages. We'll start out by all building similar sites following a template, and then we'll get to add more content and customize them.
+ * **Building our own static websites! (2hrs)** Now for the fun part. Using sublime text, we'll write our own HTML and CSS to build web pages. We'll start out by all building similar sites following a template, and then we'll get to add more content and customize them.
 
  * **Adding Javascript (2hrs)** Javascript brings our static websites to life. We'll write some Javascript code that interacts with the DOM and listens for events.
 
