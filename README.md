@@ -16,3 +16,19 @@ The class is organzied by General Assembly. More information [here](https://gene
  * **The "Back" End** Today, we're going to look at the backend, or code that runs on a web server, as opposed to on a visitor's computer. No matter what language you use on the backend, the goal is always to return HTML, CSS and JS to be run on the visitor's computer.
  * **Intro to Ruby** Ruby is one of many languages that can be run on a web server to produce HTML, CSS and JS. It tends to be very popular and trendy, especially among startups. It also has a lot of good tools and frameworks that make the web developer's life a lot easier.
  * **Libraries and Frameworks** We're going to use the Sinatra web framework to build a simple web app.
+
+## Objectives
+By the end of the class, every student should be able to....
+
+ 1. ...explain what programming is, and various environments that code can be run in.
+ 2. ...explain the basic client-server model and what sort of code runs on either side.
+ 3. ...write basic, well-formed HTML and CSS to tweak how a webpage looks.
+ 4. ...write some server-side logic in Ruby to update what HTML gets generated.
+
+## Assessments
+
+ 1. List several different places that code can run.
+ 2. Illustrate the concept of coming up with and executing simple instructions.
+ 3. Build and demonstrate a static web page using HTML, CSS and Javascript
+ 4. Describe what sorts of code could run on a client versus a server
+ 5. Build and demonstrate a basic web application written in Ruby
