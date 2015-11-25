@@ -14,7 +14,7 @@ The class is organzied by General Assembly. More information [here](https://gene
 
  * **Lunch (45mins)** Yum.
 
- * **The "Front" End (1hr)** The frontend of any web application or web site is the code that runs in the visitor's browser, as opposed to code that runs on the site's own web server. Let's take a look at the frontends of a few simple sites, using tools that our browser provides. Explore and try editing them on the fly. Tomorrow, we'll look at the backend that generates this HTML.
+ * **The "Front" End (1hr)** The frontend of any web application or web site is the code that runs in the visitor's browser, as opposed to code that runs on the site's own web server. Let's take a look at the frontends of a few simple sites, using tools that our browser provides. Explore and try editing them on the fly.
 
  * **Building our own static websites! (2hrs)** Now for the fun part. Using sublime text, we'll create an HTML file as well as some CSS to build our own web pages. We'll start out by all building similar sites following a template, and then we'll get to add more content and customize them.
 
