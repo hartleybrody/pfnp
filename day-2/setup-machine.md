@@ -9,9 +9,10 @@ Open up the Terminal application and type:
 You should see it print out your ruby version (maybe 1.9.3 or 2.1.2 or something similar). If so, you've got ruby all setup! If not, try using [one of these installers](https://www.ruby-lang.org/en/documentation/installation/#installers). I'd recommend ruby-build if you're on a mac, and there is also an option for windows.
 
 ## Install Sinatra
-In the same terminal window, run the following command
+In the same terminal window, run the following 2 commands
 
     gem install sinatra --no-ri --no-rdoc
+    gem install sinatra-reloader --no-ri --no-rdoc
 
 You should see it start to install Sinatra and a bunch of other "gems" (basically just libraries or tools). This make take a while.
 
