@@ -12,15 +12,7 @@ The class is organzied by General Assembly. More information [here](https://gene
  * **HTML vs CSS vs Javascript** HTML and CSS can be thought of as instructions for the computer, but reading the code, they don't look like instructions. This is "[Declarative Programming](https://en.wikipedia.org/wiki/Declarative_programming)" (same as SQL). We're not telling the computer how to draw the website on the screen. Javascript is an example of "[Imperative Programming](https://en.wikipedia.org/wiki/Imperative_programming)" where we tell the computer what we want it to do, step-by-step. This is also commonly used by backend programming languages, that live on the server.
  * **Building our own websites!** Now for the fun part. Using sublime text, we'll create an HTML file as well as some CSS and Javascript to build our own web pages. We'll start out by all building similar sites following a template, and then we'll get to add more content and customize them.
 
-
-## Day 2
-
- * **The "Back" End
-Today, we're going to look at the backend, or code that runs on a web server, as opposed to on a visitor's computer.
-
-No matter what language you use on the backend, the goal is always to return HTML, CSS and JS to be run on the visitor's computer.
-
- * **Intro to Ruby
-Ruby is one of many languages that can be run on a web server to produce HTML, CSS and JS. It tends to be very popular and trendy, especially among startups. It also has a lot of good tools and frameworks that make the web developer's life a lot easier.
-
- * **Libraries and Frameworks
+### Day 2
+ * **The "Back" End** Today, we're going to look at the backend, or code that runs on a web server, as opposed to on a visitor's computer. No matter what language you use on the backend, the goal is always to return HTML, CSS and JS to be run on the visitor's computer.
+ * **Intro to Ruby** Ruby is one of many languages that can be run on a web server to produce HTML, CSS and JS. It tends to be very popular and trendy, especially among startups. It also has a lot of good tools and frameworks that make the web developer's life a lot easier.
+ * **Libraries and Frameworks** We're going to use the Sinatra web framework to build a simple web app.
