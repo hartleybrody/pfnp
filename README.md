@@ -25,9 +25,9 @@ The class is organzied by General Assembly. More information [here](https://gene
 
  * **Lunch (45mins)** Pizza.
 
- * **Intro to Ruby (2hrs)** Ruby is one of many languages that can be run on a web server to produce HTML, CSS and JS. It tends to be very popular and trendy, especially among startups. It also has a lot of good tools and frameworks that make the web developer's life a lot easier. We'll look at using `irb` as well as setting up simple Sinatra endpoints.
+ * **Intro to Ruby (2hrs)** Ruby is one of many languages that can be run on a web server to produce HTML, CSS and JS. It tends to be very popular and trendy, especially among startups. It also has a lot of good tools and frameworks that make the web developer's life a lot easier. We'll look at using it from the command line, as well as setting up simple web application.
 
- * **Libraries and Frameworks (3hrs)** We're going to use the [Sinatra web framework](http://www.sinatrarb.com/) to build a simple web app. It comes with a lot of [builtin helpers](http://www.sinatrarb.com/intro.html#Helpers) to handle things like cookies, sessions and databases. Time permitting, we'll touch lightly on each of these.
+ * **Libraries and Frameworks (3hrs)** We're going to use the [Sinatra web framework](http://www.sinatrarb.com/) to build a simple web app. It comes with a lot of [builtin helpers](http://www.sinatrarb.com/intro.html#Helpers) to handle things like cookies, sessions and databases. Time permitting, we'll touch lightly on each of these and build a mini web app for storing users.
 
 ## Objectives
 By the end of the class, every student should be able to....

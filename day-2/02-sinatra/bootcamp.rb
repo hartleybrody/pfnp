@@ -23,7 +23,7 @@ get '/input/:name/' do
   # todo:
   # return the param that's in the URL
   # return all the params, including the ones in the query string
-  # hint: : http://www.sinatrarb.com/intro.html#Routes
+  # hint: http://www.sinatrarb.com/intro.html#Routes
 end
 
 
