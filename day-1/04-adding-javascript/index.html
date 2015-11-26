@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Adding javascript</title>
+    <link rel="icon" type="image/png" href="https://ga-core-production-herokuapp-com.global.ssl.fastly.net/assets/shared/favicon-dd59129eb9fbd6cda4571e8a21ff2853.ico" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="row" id="title">
+            <div class="col-md-12">
+                <h1>
+                    Adding Javascript to the page
+                </h1>
+                <p class="lead">
+                    Making the page interactive
+                </p>
+                <hr />
+            </div>
+        </div><!--.row-->
+
+        <div class="row">
+            <div class="col-md-8 col-sm-6">
+                <h2>Your Goals</h2>
+                <ol>
+                    <li>Make a popup when someone clicks the blue button</li>
+                    <li>Ask the user for their name and greet them in the sidebar</li>
+                    <li>Ask the user for a hex color and set that value as the background of the page</li>
+                    <li>Make the red button hide the title</li>
+                </ol>
+                <p>
+                    <a href="#" class="btn btn-default" id="name-button">What is your name?</a>
+                    <a href="#" class="btn btn-default" id="color-button">What is your favorite color?</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h4>Hello <span id="name">there</span></h4>
+                <a href="#" class="btn btn-primary" id="blue-button">I'm a blue button</a>
+                <a href="#" class="btn btn-danger" id="red-button">I'm a red button</a>
+            </div>
+        </div><!--.row-->
+
+    </div><!--.container-->
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready( function(){
+
+        // your javascript goes in here
+        $("#blue-button").click( function(){
+            alert("Hi there!");
+        });
+
+    });
+  </script>
+
+</html>
