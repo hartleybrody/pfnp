@@ -36,11 +36,12 @@ By the end of the class, every student should be able to....
  2. ...explain the basic client-server model and what sort of code runs on either side.
  3. ...write basic, well-formed HTML and CSS to tweak how a webpage looks.
  4. ...write some server-side logic in Ruby to update what HTML gets generated.
+ 5. ...explain how to store data in a session cookie and a database.
 
 ## Assessments
 
  1. List several different places that code can run.
  2. Illustrate the concept of coming up with and executing simple instructions.
- 3. Build and demonstrate a static web page using HTML, CSS and Javascript
- 4. Describe what sorts of code could run on a client versus a server
- 5. Build and demonstrate a basic web application written in Ruby
+ 3. Build and demonstrate a static web page using HTML, CSS and Javascript.
+ 4. Describe what sorts of code could run on a client versus a server.
+ 5. Build and demonstrate a basic web application written in Ruby that stores data.

@@ -13,6 +13,8 @@ In the same terminal window, run the following 2 commands
 
     gem install sinatra --no-ri --no-rdoc
     gem install sinatra-reloader --no-ri --no-rdoc
+    gem install sequel sinatra-sequel --no-ri --no-rdoc
+    gem install sqlite3 --no-ri --no-rdoc
 
 You should see it start to install Sinatra and a bunch of other "gems" (basically just libraries or tools). This make take a while.
 

@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h1>
-                    <%= @title %>
+                    Form Page
                 </h1>
                 <hr />
             </div>
@@ -23,20 +23,21 @@
 
         <div class="row">
             <div class="col-md-4 col-md-offset-2">
-                <h2>Hello there, <%= @name %></h2>
-                <p class="welcome-message">
-                    <% if @name == "" then %>
-                        You don't have a name.
-                    <% elsif @name == "Hartley" then %>
-                        You must be the instructor.
-                    <% else %>
-                        You must be a student.
-                    <% end %>
-                </p>
+                <form action="/form/" method="post" class="form">
+                    <div class="form-group">
+                        <label for="pwd">Your name</label>
+                        <input type="text" name="name" class="form-control" placeholder="Your name" />
+                    </div>
+                    <input type="submit" value="It's me!" class="btn btn-primary" />
+                </form>
             </div>
             <div class="col-md-4">
                 <p class="lead">
-                    It is currently <%= @now %>
+                    <% if session['name'] %>
+                        Hello there <%= session['name'] %>
+                    <% else %>
+                        Please tell us who you are.
+                    <% end %>
                 </p>
             </div>
         </div><!--.row-->
