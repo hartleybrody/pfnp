@@ -10,7 +10,7 @@ The class is organzied by General Assembly. More information [here](https://gene
 
  * **Web Sites vs Web Apps (30mins)** You're probably familiar with a few websites and web apps that you use every day. What are the differences between them? What do they have in common?
 
- * **HTML vs CSS vs Javascript (1hr)** HTML and CSS can be thought of as instructions for the computer, but reading the code, they don't look like instructions. This is "[Declarative Programming](https://en.wikipedia.org/wiki/Declarative_programming)" (same as SQL). We're not telling the computer how to draw the website on the screen. Javascript is an example of "[Imperative Programming](https://en.wikipedia.org/wiki/Imperative_programming)" where we tell the computer what we want it to do, step-by-step. Imperative Programming is also commonly used by backend programming languages, that live on the server. We'll take a look at some basic examples and do our own simple coding.
+ * **Intro to Web Development Technologies (1hr)** HTML and CSS can be thought of as instructions for the computer, but reading the code, they don't look like instructions. This is "[Declarative Programming](https://en.wikipedia.org/wiki/Declarative_programming)" (same as SQL). We're not telling the computer how to draw the website on the screen. Javascript is an example of "[Imperative Programming](https://en.wikipedia.org/wiki/Imperative_programming)" where we tell the computer what we want it to do, step-by-step. Imperative Programming is also commonly used by backend programming languages, that live on the server. We'll take a look at some basic examples and do our own simple coding.
 
  * **Lunch (45mins)** Yum.
 
@@ -27,16 +27,18 @@ The class is organzied by General Assembly. More information [here](https://gene
 
  * **Intro to Ruby (2hrs)** Ruby is one of many languages that can be run on a web server to produce HTML, CSS and JS. It tends to be very popular and trendy, especially among startups. It also has a lot of good tools and frameworks that make the web developer's life a lot easier. We'll look at using it from the command line, as well as setting up simple web application.
 
- * **Libraries and Frameworks (3hrs)** We're going to use the [Sinatra web framework](http://www.sinatrarb.com/) to build a simple web app. It comes with a lot of [builtin helpers](http://www.sinatrarb.com/intro.html#Helpers) to handle things like cookies, sessions and databases. Time permitting, we'll touch lightly on each of these and build a mini web app for storing users.
+ * **Libraries, Frameworks & APIs (3hrs)** We're going to use the [Sinatra web framework](http://www.sinatrarb.com/) to build a simple web app. It comes with a lot of [builtin helpers](http://www.sinatrarb.com/intro.html#Helpers) to handle things like cookies, sessions and databases. Time permitting, we'll touch lightly on each of these and build a mini web app for storing users.
 
 ## Objectives
 By the end of the class, every student should be able to....
 
  1. ...explain what programming is, and various environments that code can be run in.
- 2. ...explain the basic client-server model and what sort of code runs on either side.
- 3. ...write basic, well-formed HTML and CSS to tweak how a webpage looks.
- 4. ...write some server-side logic in Ruby to update what HTML gets generated.
- 5. ...explain how to store data in a session cookie and a database.
+ 2. ...explain the basic client-server model and the difference between the front & back ends.
+ 3. ...write well-formed HTML and CSS to change how a webpage looks.
+ 4. ...write Javascript to change how a webpage behaves.
+ 5. ...write some server-side logic in Ruby to control what HTML gets generated.
+ 6. ...explain how to store data in a session cookie and a database.
+ 7. ...explain the day-to-day workflow of the average developer.
 
 ## Assessments
 
