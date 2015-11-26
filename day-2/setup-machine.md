@@ -27,7 +27,7 @@ If you run `ls -l` in here, you should see the contents of that directory printe
 
 Now simply run the following command in your terminal:
 
-    ruby hello_world.rb
+    ruby 02-sinatra/bootcamp.rb
 
 You should see a WEBrick server startup. Open your browser and visit this URL, and it should say "Hello World!":
 
