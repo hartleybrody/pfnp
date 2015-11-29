@@ -56,7 +56,37 @@
             alert("Hi there!");
         });
 
-    });
+        // listen for clicks on the element with id="name-button"
+        $("#name-button").click( function(){
+
+            // ask the user for some text content
+            var nameInput = prompt("What is your name?");
+
+            // set the element with id="name" to have the text content of `nameInput` variable
+            $("#name").text(nameInput);
+
+        });
+
+        // listen for clicks on the color-button
+        $("#color-button").click( function(){
+
+            // ask the user for their favorite color
+            var colorInput = prompt("What is your favorite color?");
+
+            // jquery function for applying CSS to the `body` element
+            $("body").css({
+                "background-color": colorInput
+            });
+
+        });
+
+        // listen for clicks on the element with id="red-button"
+        $("#red-button").click( function(){
+            // hide the element with id="title"
+            $("#title").hide();
+        });
+
+    }); // document.ready
   </script>
 
 </html>
