@@ -1,7 +1,7 @@
 # [Programming for Non Programmers Bootcamp](https://generalassemb.ly/education/programming-for-non-programmers-bootcamp/boston/18504)
 Taught by me, Hartley Brody 😄
 
-The class is organzied by General Assembly. More information [here](https://generalassemb.ly/education/programming-for-non-programmers-bootcamp/boston/18504).
+The class is organized by General Assembly. More information [here](https://generalassemb.ly/education/programming-for-non-programmers-bootcamp/boston/18504).
 
 ## Sections
 
