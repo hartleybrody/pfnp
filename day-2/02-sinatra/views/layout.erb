@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= @title %></title>
+    <link rel="icon" type="image/png" href="https://ga-core-production-herokuapp-com.global.ssl.fastly.net/assets/shared/favicon-dd59129eb9fbd6cda4571e8a21ff2853.ico" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css" />
+
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1>
+                    <%= @title %>
+                </h1>
+                <hr />
+            </div>
+        </div><!--.row-->
+
+        <%= yield %>
+
+    </div><!--.container-->
+  </body>
+
+
+</html>
