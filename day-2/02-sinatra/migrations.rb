@@ -5,12 +5,11 @@ require 'sinatra/sequel'
 # environment variable as the connection string:
 set :database, 'sqlite://bootcamp.db'
 
-migration "Setup our users table" do
-  database.create_table :users do
+migration "Setup our posts table" do
+  database.create_table :posts do
     primary_key :id
-    text        :name, :null => false
-    text        :age, :null => false
-    text        :phone
-    text        :hometown
+    text        :title, :null => false
+    text        :body, :null => false
+    text        :author
   end
 end
