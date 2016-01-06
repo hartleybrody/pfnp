@@ -25,7 +25,7 @@ The class is organized by General Assembly. More information [here](https://gene
 
  * **Lunch (45mins)** Pizza.
 
- * **Intro to Sinatra (4hrs)** We're going to use the [Sinatra web framework](http://www.sinatrarb.com/) to build a simple web app. It comes with a lot of [builtin helpers](http://www.sinatrarb.com/intro.html#Helpers) to handle things like cookies, sessions and databases. Time permitting, we'll touch lightly on each of these and build a mini web app for storing users.
+ * **Intro to Sinatra (4hrs)** We're going to use the [Sinatra web framework](http://www.sinatrarb.com/) to build a simple web app. It comes with a lot of [builtin helpers](http://www.sinatrarb.com/intro.html#Helpers) to handle things like cookies, sessions and databases. Time permitting, we'll touch lightly on each of these and build a mini blogging engine for storing posts.
 
  * **Web Development Workflow (1hr)** Before we wrap up, we'll touch on a few more topics that are essential to web development. We'll look at the day-to-day workflow of the average web developer, and some other tools and resources that can make us more productive.
 

@@ -25,22 +25,22 @@
 
         <div class="row">
             <div class="col-md-8 col-sm-6">
-                <h2>Your Goals</h2>
+                <h2>Things this page already does</h2>
                 <ol>
-                    <li>Make a popup when someone clicks the blue button</li>
-                    <li>Ask the user for their name and greet them in the sidebar</li>
-                    <li>Ask the user for a hex color and set that value as the background of the page</li>
-                    <li>Make the red button hide the title</li>
+                    <li>Open a popup when someone clicks the blue button</li>
+                    <li>Hide the title when someone clicks the red button</li>
+                    <li>Ask the user for their name and greet them in the sidebar, when they click the green button</li>
+                    <li>Ask the user for a hex color and set that value as the background of the page, when they click the orange button</li>
                 </ol>
                 <p>
-                    <a href="#" class="btn btn-default" id="name-button">What is your name?</a>
-                    <a href="#" class="btn btn-default" id="color-button">What is your favorite color?</a>
+                    <a href="#" class="btn btn-primary" id="greet-button">Hello there!</a>
+                    <a href="#" class="btn btn-danger"  id="danger-button">Danger!</a>
+                    <a href="#" class="btn btn-success" id="name-button">What is your name?</a>
+                    <a href="#" class="btn btn-warning" id="color-button">What is your favorite color?</a>
                 </p>
             </div>
             <div class="col-md-4 col-sm-6">
                 <h4>Hello <span id="name">there</span></h4>
-                <a href="#" class="btn btn-primary" id="blue-button">I'm a blue button</a>
-                <a href="#" class="btn btn-danger" id="red-button">I'm a red button</a>
             </div>
         </div><!--.row-->
 
@@ -52,11 +52,22 @@
     $(document).ready( function(){
 
         // your javascript goes in here
-        $("#blue-button").click( function(){
-            alert("Hi there!");
+        $("#greet-button").click( function(){
+
+            // open an 'alert' window
+            alert("Hope you're learning Javascript!");
+
         });
 
-        // listen for clicks on the element with id="name-button"
+        // listen for clicks on the element with id="danger-button"
+        $("#danger-button").click( function(){
+
+            // hide the element with id="title"
+            $("#title").hide();
+
+        });
+
+        // this is saying to listen for any clicks on the element with id="name-button"
         $("#name-button").click( function(){
 
             // ask the user for some text content
@@ -78,12 +89,6 @@
                 "background-color": colorInput
             });
 
-        });
-
-        // listen for clicks on the element with id="red-button"
-        $("#red-button").click( function(){
-            // hide the element with id="title"
-            $("#title").hide();
         });
 
     }); // document.ready
