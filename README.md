@@ -36,7 +36,7 @@ By the end of the class, every student should be able to....
  2. ...explain the client-server model and the difference between the "front" & "back" ends.
  3. ...write HTML and CSS to change how a webpage looks.
  4. ...write Javascript to change how a webpage behaves.
- 5. ...write some backend code to control what the frontend looks like.
+ 5. ...write some backend ruby code to control what the frontend looks like.
  6. ...explain how to store data in a session cookie and a database.
  7. ...explain the day-to-day workflow of the average developer.
 
