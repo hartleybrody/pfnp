@@ -21,13 +21,13 @@ You should see it start to install Sinatra and a bunch of other "gems" (basicall
 ## Try running the "hello world" application
 In your terminal window, use the `cd` command to change into the directory where you downloaded the day 2 materials. For example, if you downloaded them to your desktop, you'd run:
 
-    cd ~/Desktop/day-2/
+    cd ~/Desktop/sunday/
 
 If you run `ls -l` in here, you should see the contents of that directory printed out to your terminal.
 
 Now simply run the following command in your terminal:
 
-    ruby 02-sinatra/bootcamp.rb
+    ruby 2-sinatra/bootcamp.rb
 
 You should see a WEBrick server startup. Open your browser and visit this URL, and it should say "Hello World!":
 
