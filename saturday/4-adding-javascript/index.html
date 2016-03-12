@@ -38,6 +38,14 @@
                     <a href="#" class="btn btn-success" id="name-button">What is your name?</a>
                     <a href="#" class="btn btn-warning" id="color-button">What is your favorite color?</a>
                 </p>
+                <hr>
+                <h2>Your goals</h2>
+                <ol>
+                    <li>Add a new button that says "Shrink Text" and give it an `id` attribute set to "shrink-text"</li>
+                    <li>Write a jQuery selector for your new button, and add an event listener to it so that it pops an alert message when someone clicks on it</li>
+                    <li>Change the event listener to increase the `font-size` of all text in the `body` of the page to `1.5em`</li>
+                    <li>Add another button that does the same thing, except that it shrinks the text to `0.8em`</li>
+                </ol>
             </div>
             <div class="col-md-4 col-sm-6">
                 <h4>Hello <span id="name">there</span></h4>
@@ -63,7 +71,7 @@
         $("#danger-button").click( function(){
 
             // hide the element with id="title"
-            $("#title").hide();
+            $("#title").toggleClass("hidden");
 
         });
 
