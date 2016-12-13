@@ -5,7 +5,10 @@
     <title>This is a more complex layout</title>
     <link rel="icon" type="image/png" href="https://ga-core-production-herokuapp-com.global.ssl.fastly.net/assets/shared/favicon-dd59129eb9fbd6cda4571e8a21ff2853.ico" />
 
+    <!-- Here we're including Twitter's huge bootstrap CSS file that gives us tons of classes to use -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Here we're also including our own CSS stylesheet, to keep our own CSS customizations -->
     <link rel="stylesheet" href="stylesheet.css" />
 
   </head>
@@ -15,6 +18,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1>
+                    <i class="glyphicon glyphicon-th"></i>
                     This is a more complex layout
                 </h1>
                 <hr />
@@ -22,7 +26,7 @@
         </div><!--.row-->
 
         <div class="row">
-            <div class="col-md-8 col-sm-6">
+            <div class="col-md-8">
                 <h2>Starting to use a grid framework</h2>
                 <p>
                     One of the most important things we can use CSS for is laying out the structure of our site. When building a new website from scratch today, a lot of developers use a CSS grid framework that someone else wrote and released for free. This saves us from having to write a bunch of "boring" code that handles the grid and columns, and making sure things look good on mobile. That way we can focus on writing the HTML and CSS that's specific to our website.
@@ -30,12 +34,18 @@
                 <p>
                     This page uses Twitter's bootstrap CSS framework. More information about that <a href="http://getbootstrap.com/css/#grid-example-basic" target="_blank">can be found here</a>. The basic premise is that you have <strong>rows</strong> of content that should be stacked horizontally. Then within a row, you have <strong>columns</strong> of various widths (this text and the sidebar next to it, for example). Each row can be split up into up to 12 columns. This text is in a column that is 8 units wide, and then the sidebar is in a column that is 4 units wide.
                 </p>
+                <a href="http://getbootstrap.com/css/#grid-example-basic" class="btn btn-primary btn-lg" target="_blank" >Read the Documentation &rarr;</a>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4">
+                <div class="alert alert-info" role="alert">
+                    <strong>Heads up!</strong> These are your goals
+                </div>
+
                 <h2>Your goals</h2>
                 <ol>
-                    <li>Add another row with several different sized columns.</li>
-                    <li>Adjust the widths of the columns in this row, so that the main text and sidebar are the same width.</li>
+                    <li>Add another paragraph of text below the blue button, give it a class attribute of "my-text" and change the font color of just that paragraph in your stylesheet</li>
+                    <li>Change the classes on the "divs" to adjust the widths of the columns in this row, so that the main text and sidebar are the same width.</li>
+                    <li>Add another row with several different sized columns. Be careful with your nesting, pay attention to indentation and spacing!</li>
                     <li>Make the columns change size on different screen widths. You'll need to read the <a href="http://getbootstrap.com/css/#grid-example-mixed" target="_blank">bootstrap documentation for this</a>.</li>
                 </ol>
             </div>
