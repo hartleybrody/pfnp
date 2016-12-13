@@ -17,7 +17,7 @@ The class is organized by General Assembly. More information [here](https://gene
  * **Adding Javascript (1hr)** Javascript brings our static websites to life. We'll write some Javascript code that interacts with the DOM and listens for events.
 
 ### Day 2
- * **The "Back" End (1hr)** Today, we're going to look at the backend, or code that runs on a web server, as opposed to on a visitor's computer. No matter what language you use on the backend, the goal is always to return HTML, CSS and JS to be run on the visitor's computer.
+ * **The "Back" End (1hr)** Today, we're going to look at the backend, or code that runs on a web server, as opposed to on a visitor's computer. No matter what language you use on the backend, the goal of a website is always to return HTML, CSS and JS to be run on the visitor's computer.
 
  * **Application Programming Interfaces (1hr)** Sometimes, you want to outsource your backend to someone else. Maybe they have data you want access to, or maybe they perform some complex function that would be hard for you to build yourself. We'll look at how you can make "calls" to someone else's backend (or even your own) by making HTTP requests from within your web app.
 
@@ -30,10 +30,10 @@ By the end of the class, every student should be able to....
 
  1. ...explain what programming is.
  2. ...explain the client-server model and the difference between the "front" & "back" ends.
- 3. ...write HTML and CSS to change how a webpage looks.
- 4. ...write Javascript to change how a webpage behaves.
- 6. ...explain how to interact with an API and 2 reasons why you might want to.
- 7. ...explain the day-to-day workflow of the average developer.
+ 3. ...write HTML, CSS and Javascript to change how a webpage looks and behaves.
+ 4. ...use Chrome's developer tools to inspect a website and learn how its frontend works.
+ 5. ...explain how to interact with an API and 2 reasons why you might want to.
+ 6. ...explain the day-to-day workflow of the average developer.
 
 ## Assessments
 
