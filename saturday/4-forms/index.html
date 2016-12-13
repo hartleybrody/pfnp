@@ -1,0 +1,80 @@
+<!doctype>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Using forms</title>
+    <link rel="icon" type="image/png" href="https://ga-core-production-herokuapp-com.global.ssl.fastly.net/assets/shared/favicon-dd59129eb9fbd6cda4571e8a21ff2853.ico" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>
+                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                    Getting started with forms
+                </h1>
+                <hr />
+            </div>
+        </div><!--.row-->
+
+        <div class="row">
+            <div class="col-md-8">
+                <p class="lead">
+                    Whenever you want to collect information from your users, you'll do it with a &lt;form&gt; element and a series of one or more &lt;input&gt; elements nested inside. A form allows users to make a request to our "server" -- similar to clicking a link -- except that the request will also send along some extra information, based on what the user entered into the form.
+                </p>
+                <p>
+                    At a high level, the &lt;form&gt; element describes the behavior of the form and what should happen when a user tries to submit it. The &lt;input&gt; elements describe each of the fields of the form, as well as the "submit" button.
+                </p>
+
+                <h4>Start Exploring</h4>
+                <p>
+                    To the left is a very simple form, lightly styled with some bootstrap classes.
+                </p>
+                <ol>
+                    <li>Inspect each of the input fields in the form, both using your browser's developer tools and in the HTML file for this page.</li>
+                    <li>Inspect the outer form element. What does it tell you about how it will send the data to the server when a user clicks "submit"?</li>
+                    <li>Take a look at each of the &lt;input&gt; elements, and note the <code>type</code> and <code>name</code> attributes for each.</li>
+                    <li>Open the network tab in Chrome's developer tools, click the "Preserve Log" checkbox, and then submit the form. What request method was used? How did the values you typed in get sent to the server?</li>
+                </ol>
+
+                <h4>Your Goals</h4>
+                <ol>
+                    <li>Add another field to the form with the attribute <code>name="last-name"</code> that collects the user's last name</li>
+                    <li>Make sure that the new form field is properly appended to the query string when the from is submitted</li>
+                    <li>Try switching the form to send a POST request instead of a GET request.</li>
+                    <li>Now what happens to the URL when you submit the form? How can you verify the information is being sent to the "server" correctly?</li>
+                </ol>
+            </div>
+
+            <div class="col-md-4">
+
+                <!--a blank action="" attribute simply means 'make a request to the current URL that we are already on' -->
+                <form class="form" method="get" action="">
+
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" name="first-name" placeholder="Your First Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input type="text" class="form-control" name="email-address" placeholder="Email Address">
+                    </div>
+
+                    <input type="submit" class="btn btn-primary">
+
+                </form>
+
+            </div>
+        </div><!--.row-->
+
+    </div><!--.container-->
+  </body>
+
+
+</html>
