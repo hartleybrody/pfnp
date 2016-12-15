@@ -17,9 +17,9 @@ The class is organized by General Assembly. More information [here](https://gene
  * **Adding Javascript (1hr)** Javascript brings our static websites to life. We'll write some Javascript code that interacts with the DOM and listens for events.
 
 ### Day 2
- * **The "Back" End (1hr)** Today, we're going to look at the backend, or code that runs on a web server, as opposed to on a visitor's computer. No matter what language you use on the backend, the goal of a website is always to return HTML, CSS and JS to be run on the visitor's computer.
+ * **The "Back" End (1hr)** Today, we're going to look at the backend, or code that runs on a web server, as opposed to on a visitor's computer.
 
- * **Application Programming Interfaces (1hr)** Sometimes, you want to outsource your backend to someone else. Maybe they have data you want access to, or maybe they perform some complex function that would be hard for you to build yourself. We'll look at how you can make "calls" to someone else's backend (or even your own) by making HTTP requests from within your web app.
+ * **Application Programming Interfaces (1hr)** Sometimes, you want to outsource your backend to someone else. Maybe they have data you want access to, or maybe they perform some complex function that would be hard for you to build yourself. We'll look at how you can connect to a backend by making HTTP requests from within your frontend.
 
  * **Building a Nutrition Tracker (2hrs)** Now that we know how to build a basic frontend, add functionality to it with Javascript and interact with a backend via API calls -- let's put it all together! We'll build a small app for tracking our meals. To save us time, I've already written the code to build out the backend, but we can look through it and interact with it via an API.
 
