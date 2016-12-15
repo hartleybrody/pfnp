@@ -87,6 +87,15 @@
     </div><!--.container-->
 
 
+
+    <script type="text/template" id="meal-template">
+        <div class="meal">
+            <h3>{{food-name}}</h3>
+            <p>{{calories}} Calories</p>
+            <p>{{carbs}} Carbohydrates</p>
+        </div>
+    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript">
 
@@ -113,15 +122,14 @@
         });
 
         // take in a JSON dictionary of meal information, and return a string of HTML
+        // don't edit this
         function buildMealHtml(meal){
-            var html = "";
-
-            html += "<div class='meal'>"
-            html += "    <h3>" + meal['food-name'] + "</h3>"
-            html += "    <p>" + meal['calories'] + " Calories</p>"
-            html += "    <p>" + meal['carbs'] + " Carbs</p>"
-            html += "</div>"
-            return html;
+            var template = $("#meal-template").html();
+            $.each(meal, function(k, v){
+                var re = new RegExp("{{" + k + "}}","g");
+                template = template.replace(re, v);
+            })
+            return template;
         }
 
     })
