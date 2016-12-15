@@ -31,12 +31,30 @@
 
                 <h4>Steps to Follow</h4>
                 <ol>
-                    <li>Start by <a href="https://pfnp-backend.herokuapp.com/" target="_blank">reading the documentation</a> on the backend API that we'll be using.</li>
-                    <li>Add a form to this page that allows you to enter a new meal</li>
-                    <li>Make sure that you get a successful response when submitting the form</li>
-                    <li>Write some Javascript that makes an AJAX request to load your meals</li>
-                    <li>For each of the meals that's returned, add some HTML content to the page</li>
-                    <li>Add a "delete" button next to a meal that triggers an AJAX request that tells the backend to remove that meal</li>
+                    <li>
+                        <strong>Read the Docs:</strong><br>
+                        Start by <a href="https://pfnp-backend.herokuapp.com/" target="_blank">reading the documentation</a> on the backend API that we'll be using.
+                    </li>
+                    <li>
+                        <strong>Hook Up the Form to the API</strong><br>
+                        Edit the form on this page to make sure it's submitting to the API correctly (hint: look for the section in the API docs about creating a new meal for a user and make sure that the form is making a request with the correct URL and method when it is submitted).
+                    </li>
+                    <li>
+                        <strong>Add More Fields to the Form</strong><br>
+                        A good meal tracker needs more than just a meal's name! Add 2-3 more fields to the form for tracking things like calories, carbohydrates, protein or fat for each meal. Make sure that you're updating the <code>name=""</code> attribute of each <code>&lt;input&gt;</code> element so they're all sent to the API properly. Use your chrome developer tools to verify things are being sent correctly.
+                    </li>
+                    <li>
+                        <strong>Load Your Existing Meals via the API</strong><br>
+                        Now that you've created a few meals with your form, we want to get them back from the API. There's some javascript already written that performs an AJAX request, make sure it's making the request using the correct URL and method. (hint: search the page for <code>when the page first loads, ask the API for a list of all of our meals</code> to find the right section of javascript)
+                    </li>
+                    <li>
+                        <strong>Render Your Meal Information on the Page</strong><br>
+                        Now that we've gotten the data back from the API, we'll need to transform it from JSON data into HTML content that can be rendered on the page and styled with CSS. I've already created an element (with <code>id="meal-template"</code>) as a basic template that just uses the meal's name. Add a few more fields to that template to render the new fields you added to the form.
+                    </li>
+                    <li>
+                        <strong>Add a Link for Deleting a Meal</strong><br>
+                        Head back to the API docs and look for instructions on how to delete a specific meal for a user. You'll want to add a simple link to your meal's template. (hint: you'll need both your username AND the meal's ID in order to build the correct URL for the delete link. The meal's ID comes back from the API after it has been created and is accessible as <code>{{id}}</code> in the template.)
+                    </li>
                 </ol>
 
             </div>
@@ -50,20 +68,10 @@
                 <p class="text-muted">Your form should go here</p>
                 <hr>
 
-                <form class="form" action="http://pfnp-backend.herokuapp.com/meals/hartley/" method="post">
+                <form class="form" action="" method="">
                     <div class="form-group">
                         <label>Meal Name</label>
                         <input type="text" name="meal-name" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Total Calories</label>
-                        <input type="text" name="calories" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Total Carbohydrates</label>
-                        <input type="text" name="carbs" class="form-control">
                     </div>
 
                     <input type="submit" class="btn btn-primary" value="Create Meal" />
@@ -89,12 +97,14 @@
 
     <!-- This is where you write your HTML for each meal that you want to display -->
     <script type="text/template" id="meal-template">
+
         <div class="meal">
-            <a href="http://pfnp-backend.herokuapp.com/meals/hartley/{{id}}/delete/" class="btn btn-danger pull-right">Delete Meal</a>
-            <h3>{{meal-name}} <small class="pull-right">{{created_at}}</small></h3>
-            <p>{{calories}} Calories</p>
-            <p>{{carbs}} Carbohydrates</p>
-        </div>
+            <h3>
+                {{meal-name}}
+                <small class="pull-right">{{created_at}}</small>
+            </h3>
+        </div><!--.meal-->
+
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -102,36 +112,38 @@
 
     $(document).ready(function(){
 
-        // when the page first loads, call the API to get all of our meals
-        $.ajax("http://pfnp-backend.herokuapp.com/meals/hartley/", {
+        // when the page first loads, ask the API for a list of all of our meals
+        $.ajax({
+
+            url: "",
+            method: "",
+
+            // vvvvvvvvv YOU DON'T NEED TO EDIT THIS vvvvvvvvv //
             success: function(data){
-                console.log("Here's what we got back from the server:")
-
+                console.log("Here's what we got back from the API:")
                 $.each(data, function(_, meal){
-
-                    // show the meal's data in the console so we see what we're working with
-                    console.log(meal);
-
-                    // build our own custom HTML for displaying each meal
-                    var mealHtml = buildMealHtml(meal);
-
-                    // add this meal's HTML to the page
-                    $("#meals").append(mealHtml)
+                    console.log(meal);  // show the meal's data in the console so we see what we're working with
+                    var mealHtml = addMealToPage(meal);  // build our own custom HTML for displaying each meal on the page
                 })
 
             }
+            // ^^^^^^^^^ YOU DON'T NEED TO EDIT THIS ^^^^^^^^^ //
+
         });
 
-        // take in a JSON dictionary of meal information, and return a string of HTML
-        // don't edit this
-        function buildMealHtml(meal){
+        // vvvvvvvvv YOU DON'T NEED TO EDIT THIS vvvvvvvvv //
+        function addMealToPage(meal){
+            // take in the meal information from the API, and return a string of HTML
             var template = $("#meal-template").html();
             $.each(meal, function(k, v){
                 var re = new RegExp("{{" + k + "}}","g");
                 template = template.replace(re, v);
-            })
-            return template;
+            });
+
+            template = template.replace(/{{[\w-_]+}}/g, "");
+            $("#meals").append(template)
         }
+        // ^^^^^^^^^ YOU DON'T NEED TO EDIT THIS ^^^^^^^^^ //
 
     })
 
