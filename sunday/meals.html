@@ -38,15 +38,15 @@
                     <li>For each of the meals that's returned, add some HTML content to the page</li>
                     <li>Add a "delete" button next to a meal that triggers an AJAX request that tells the backend to remove that meal</li>
                 </ol>
-                <hr>
 
             </div>
         </div><!--.row-->
 
 
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-6 col-md-offset-3">
 
+                <hr>
                 <p class="text-muted">Your form should go here</p>
                 <hr>
 
@@ -74,9 +74,10 @@
 
 
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-6 col-md-offset-3">
                 <div id="meals">
 
+                    <hr>
                     <p class="text-muted">Your meals should be listed here</p>
                     <hr>
 
@@ -86,11 +87,11 @@
 
     </div><!--.container-->
 
-
-
+    <!-- This is where you write your HTML for each meal that you want to display -->
     <script type="text/template" id="meal-template">
         <div class="meal">
-            <h3>{{food-name}}</h3>
+            <a href="http://pfnp-backend.herokuapp.com/meals/hartley/{{id}}/delete/" class="btn btn-danger pull-right">Delete Meal</a>
+            <h3>{{meal-name}} <small class="pull-right">{{created_at}}</small></h3>
             <p>{{calories}} Calories</p>
             <p>{{carbs}} Carbohydrates</p>
         </div>
